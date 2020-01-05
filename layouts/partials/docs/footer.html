@@ -23,5 +23,8 @@
     </a>
   </div>
   {{ end }}
-
 </div>
+
+{{ if .Site.DisqusShortname }}
+  {{ template "_internal/disqus.html" . }}
+{{ end }}

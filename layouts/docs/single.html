@@ -7,3 +7,8 @@
 {{ define "toc" }}
   {{ partial "docs/toc" . }}
 {{ end }}
+
+{{ if .Site.Params.disqusShortname }}
+  {{ template "_internal/disqus.html" . }}
+{{ end }}
+
