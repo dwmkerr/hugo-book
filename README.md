@@ -24,6 +24,7 @@
 - Customisable
 - Zero initial configuration
 - Handy shortcodes
+- Optional support for Disqus
 
 ## Requirements
 
@@ -117,6 +118,10 @@ You can also see `yaml` example [here](https://github.com/alex-shpak/hugo-book/b
 # Always put it on the top of the configuration file, otherwise it won't work
 googleAnalytics = "UA-XXXXXXXXX-X"
 
+# (Optional) If you provide a Disqus shortname, comments will be enabled on
+# pages.
+# disqusShortname = "my-site"
+
 # (Optional) Set this to true if you use capital letters in file names
 disablePathToLower = true
 
@@ -168,6 +173,12 @@ disableKinds = ['taxonomy', 'taxonomyTerm']
   # Index is built on fly, therefore it might slowdown your website.
   BookSearch = true
 ```
+
+### Content Confiiguration
+
+If you have enabled Disqus by setting `disqusShortname` in your config file, you
+can disable Disqus for specific pages by setting `disable_comments: true` in
+your page's frontmatter.
 
 ### Multi-Language Support
 Theme supports Hugo's [multilingual mode](https://gohugo.io/content-management/multilingual/), just follow configuration guide there. You can also tweak search indexing configuration per language in `i18n` folder.
