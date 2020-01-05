@@ -170,6 +170,12 @@ disableKinds = ['taxonomy', 'taxonomyTerm']
   BookSearch = true
 ```
 
+### Content Confiiguration
+
+If you have enabled Disqus by setting `disqusShortname` in your config file, you
+can disable Disqus for specific pages by setting `disable_comments: true` in
+your page's frontmatter.
+
 ### Multi-Language Support
 Theme supports Hugo's [multilingual mode](https://gohugo.io/content-management/multilingual/), just follow configuration guide there. You can also tweak search indexing configuration per language in `i18n` folder.
 
